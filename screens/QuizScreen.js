@@ -44,7 +44,7 @@ const QuizScreen = ({ navigation }) => {
     if (nextQuestionIndex < questions.length) {
       setCurrentQuestionIndex(nextQuestionIndex);
     } else {
-      navigation.navigate("Result", {
+      navigation.replace("Result", {
         score,
         totalQuestions: questions.length,
       });
